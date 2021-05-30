@@ -13,7 +13,7 @@
 git clone -b 0.4 --depth 1 https://github.com/xiph/rav1e.git
 
 cd rav1e
-cargo install cargo-c
+cargo install cargo-c --features=vendored-openssl
 
 mkdir build.libavif
 cargo cinstall --release --library-type=staticlib --prefix=/usr --destdir build.libavif
